@@ -1,8 +1,10 @@
 
 import React from "react";
 import ProductComponent from "./ProductComponent";
+import { useSelector } from "react-redux";
 
 const BestSeller = () => {
+  const {BestSellingData} = useSelector((state) => state.home)
   return (
     <div className="py-10 my-10 px-11">
       <p className="text-center text-2xl font-medium font-heading pb-8">
@@ -10,8 +12,8 @@ const BestSeller = () => {
       </p>
       <div className="py-5 grid grid-cols-4 gap-5">
         {
-          [0,1,2,3,4,5,6,7].map((el) => {
-            return <ProductComponent key={el}/>
+          BestSellingData.map((el,i) => {
+            return <ProductComponent key={i} data={el}/>
           })
         }
       </div>

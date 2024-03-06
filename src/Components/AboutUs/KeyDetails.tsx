@@ -22,7 +22,7 @@ const KeyDetails = () => {
           accusantium? Atque magnam dolore laboriosam amet illo obcaecati nobis
           sed sequi provident incidunt.
         </p>
-        <div className="flex flex-row gap-5 items-center">
+        <div className="flex flex-row gap-5">
           <FaFacebook className="text-3xl text-blue-700 cursor-pointer" />
           <FaSquareXTwitter className="text-3xl cursor-pointer" />
           <FaSquareSnapchat className="text-3xl text-yellow-800 cursor-pointer" />

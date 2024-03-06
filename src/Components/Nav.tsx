@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { FaCartShopping } from "react-icons/fa6";
+import { NavLink } from "react-router-dom";
 
 import {
   Navbar,
@@ -20,35 +21,36 @@ const Nav = () => {
       "resize",
       () => window.innerWidth >= 960 && setOpenNav(false)
     );
-    
   }, []);
 
   const [scrollPos, setScrollPos] = useState(0);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [ydown,setydown] = useState(false);
+  const [ydown, setydown] = useState(false);
 
   const handleScroll = () => {
     const currentScrollPos = window.scrollY;
     setScrollPos(currentScrollPos);
-    if(Nav.current.offsetHeight < window.scrollY && Nav.current.offsetHeight > prevScrollPos){
-      Nav.current.classList.add("fixed","-translate-y-[100%]");
-    }
-    else if(window.scrollY == 0){
-      Nav.current.classList.remove("fixed","-translate-y-[100%]");
-   
-    }
-    else if(window.scrollY > prevScrollPos && Nav.current.offsetHeight < window.scrollY){
-      if(ydown){
-        Nav.current.classList.add("-translate-y-[100%]");
-        setydown(false);
-      }  
-    }
-    else if(window.scrollY < prevScrollPos && Nav.current.offsetHeight < window.scrollY){
-      if(!ydown){
-        Nav.current.classList.remove("-translate-y-[100%]");
-        setydown(true);
-      }
-      
+    if (
+      Nav.current.offsetHeight < window.scrollY &&
+      Nav.current.offsetHeight > prevScrollPos
+    ) {
+      Nav.current.classList.add("fixed", "-translate-y-[100%]");
+    } else if (window.scrollY == 0) {
+      Nav.current.classList.remove("fixed", "-translate-y-[100%]");
+    } else if (
+      window.scrollY > prevScrollPos &&
+      Nav.current.offsetHeight < window.scrollY &&
+      ydown
+    ) {
+      Nav.current.classList.add("-translate-y-[100%]");
+      setydown(false);
+    } else if (
+      window.scrollY < prevScrollPos &&
+      Nav.current.offsetHeight < window.scrollY &&
+      !ydown
+    ) {
+      Nav.current.classList.remove("-translate-y-[100%]");
+      setydown(true);
     }
   };
 
@@ -57,10 +59,10 @@ const Nav = () => {
       handleScroll();
     };
 
-    window.addEventListener('scroll', handleScrollEvent);
+    window.addEventListener("scroll", handleScrollEvent);
 
     return () => {
-      window.removeEventListener('scroll', handleScrollEvent);
+      window.removeEventListener("scroll", handleScrollEvent);
     };
   }, [scrollPos]);
 
@@ -76,9 +78,9 @@ const Nav = () => {
         color="blue-gray"
         className="flex items-center gap-x-2 p-1 font-medium"
       >
-        <a href="#" className="flex items-center text-xl active">
+        <NavLink to={"/"} className="flex items-center text-xl">
           Home
-        </a>
+        </NavLink>
       </Typography>
       <Typography
         as="li"
@@ -86,9 +88,9 @@ const Nav = () => {
         color="blue-gray"
         className="flex items-center gap-x-2 p-1 font-medium"
       >
-        <a href="#" className="flex items-center text-xl">
+        <NavLink to={"/products"} className="flex items-center text-xl">
           Products
-        </a>
+        </NavLink>
       </Typography>
       <Typography
         as="li"
@@ -96,9 +98,9 @@ const Nav = () => {
         color="blue-gray"
         className="flex items-center gap-x-2 p-1 font-medium"
       >
-        <a href="#" className="flex items-center text-xl">
+        <NavLink to={"/about"} href="#" className="flex items-center text-xl">
           About
-        </a>
+        </NavLink>
       </Typography>
       <Typography
         as="li"
@@ -106,9 +108,9 @@ const Nav = () => {
         color="blue-gray"
         className="flex items-center gap-x-2 p-1 font-medium"
       >
-        <a href="#" className="flex items-center text-xl">
+        <NavLink to={"/customers"} className="flex items-center text-xl">
           Customers
-        </a>
+        </NavLink>
       </Typography>
       <Typography
         as="li"
@@ -116,9 +118,9 @@ const Nav = () => {
         color="blue-gray"
         className="flex items-center gap-x-2 p-1 font-medium"
       >
-        <a href="#" className="flex items-center text-xl">
+        <NavLink to={"/contact"} className="flex items-center text-xl">
           Contact
-        </a>
+        </NavLink>
       </Typography>
     </ul>
   );

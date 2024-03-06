@@ -54,7 +54,7 @@ const OurExperiences = () => {
           <div>
             <p className="text-4xl font-bold pb-1 text-green-800">
               {CounterStart ? (
-                <CountUp end={1280} duration={3} delay={0.5} />
+                <CountUp end={12836} duration={3} delay={0.5} />
               ) : null}
             </p>
             <p>

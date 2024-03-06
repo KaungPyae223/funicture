@@ -8,4 +8,7 @@
 .active {
   @apply bg-blue-300 px-3 py-1.5 rounded;
 }
+.ProductHead:hover .ProductBody{
+  @apply bg-blue-200;
+}
 

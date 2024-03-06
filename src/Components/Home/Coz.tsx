@@ -69,7 +69,7 @@ const Coz = () => {
                 initial={"initial"}
                 whileInView={"enter"}
                 variants={ImageRight}
-                custom={3}
+                custom={2}
                 viewport={{ once: true }}
               >
                 <img

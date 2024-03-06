@@ -1,0 +1,87 @@
+{
+  "Reviews": [
+    {
+      "id": 1,
+      "title": "Great Variety and Affordable Prices",
+      "body": "I love the diverse range of furniture options available at this store. Whether you're looking for modern, classic, or eclectic pieces, they have it all. What's even better is that the prices are quite reasonable for the quality you get. It's the perfect place to find furniture that suits any style or budget.",
+      "Name": "Alebert Suzan",
+      "Position": "Project Manager",
+      "img": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww"
+    },
+    {
+      "id": 2,
+      "title": "Quality Products and Timely Delivery",
+      "body": "I'm extremely satisfied with the furniture I purchased from this company. The build quality is excellent, and the materials used are top-notch. The delivery was prompt, and the items arrived in perfect condition. I highly recommend this furniture company for their commitment to quality and service.",
+      "Name": "John Roberts",
+      "Position": "Homeowner",
+      "img": "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 3,
+      "title": "Exceptional Customer Service",
+      "body": "I had a minor issue with one of the items I ordered, and the customer service team went above and beyond to resolve it quickly. Their responsiveness and commitment to customer satisfaction are truly commendable. It's reassuring to know that this company values its customers and stands behind its products.",
+      "Name": "Alexandra Turner",
+      "Position": "Business Professional",
+      "img": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  ],
+  "BestSeller": [
+    {
+      "id": 1,
+      "img": "https://plus.unsplash.com/premium_photo-1681980019667-96baeb36fc33?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGZ1cm5pdHVyZXxlbnwwfHwwfHx8MA%3D%3D",
+      "title": "Victor Alex",
+      "type": "Lamp",
+      "price": "350"
+    },
+    {
+      "id": 2,
+      "img": "https://content.cylindo.com/api/v2/5084/products/INGEBORG/frames/30/INGEBORG.JPG?background=FFFFFF&feature=LEG%20FINISH:NATURAL%20OAK&feature=UPHOLSTERY:FIORD%20751",
+      "title": "Elegant Lounge Chair",
+      "type": "Chair",
+      "price": "550"
+    },
+    {
+      "id": 3,
+      "img": "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "title": "Modern Coffee Table",
+      "type": "Table",
+      "price": "250"
+    },
+    {
+      "id": 4,
+      "img": "https://content.cylindo.com/api/v2/5084/products/BRASILIA%20LOUNGE%20CHAIR/frames/30/BRASILIA%20LOUNGE%20CHAIR.JPG?background=FFFFFF&feature=FRAME:NATURAL%20OAK&feature=UPHOLSTERY:SHEEPSKIN%20NATURE",
+      "title": "Cozy Sofa Set",
+      "type": "Sofa",
+      "price": "1200"
+    },
+    {
+      "id": 5,
+      "img": "https://ak1.ostkcdn.com/images/products/is/images/direct/a4baf7c62afebf4fbde4108efa0eefa02d55cfba/4-Tier-Open-Bookshelf%2C-70.8%22-Industrial-Wood-Bookcase%2C-Easy-Assembly.jpg?imwidth=720&impolicy=medium",
+      "title": "Vintage Bookshelf",
+      "type": "Shelf",
+      "price": "450"
+    },
+    {
+      "id": 6,
+      "img": "https://assets.wfcdn.com/im/5140046/resize-h800-w800%5Ecompr-r85/2551/255189687/Desk.jpg",
+      "title": "Minimalist Desk",
+      "type": "Desk",
+      "price": "300"
+    },
+    {
+      "id": 7,
+      "img": "https://plus.unsplash.com/premium_photo-1671269943788-53b24f94d11c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "title": "Rustic Dining Table",
+      "type": "Table",
+      "price": "700"
+    },
+    {
+      "id": 8,
+      "img": "https://cdn11.bigcommerce.com/s-zllqv0a9td/images/stencil/1280x1280/o/beds-cat-image__79872.original.jpg",
+      "title": "Contemporary Bed Frame",
+      "type": "Bed",
+      "price": "900"
+    }
+  ]
+  
+}

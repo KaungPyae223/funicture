@@ -130,6 +130,6 @@ export const ReviewCardUp = {
   enter: (i) => ({
     y: 0,
     opacity: 1,
-    transition: { duration: 1, ease: [0.33, 1, 0.68, 1], delay: 0.5 * i },
+    transition: { duration: 1, ease: [0.33, 1, 0.68, 1], delay: i },
   }),
 };
