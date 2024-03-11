@@ -1,15 +1,38 @@
-import React from 'react';
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { AddDetailsData } from "../../features/keypeopleSlice";
 
-const KeyPeopleCard = () => {
-    return (
-        <div className="rounded-lg shadow-lg overflow-hidden cursor-pointer">
-            <img src="https://img.freepik.com/free-photo/portrait-beautiful-asian-woman-saleswoman-pointing-fingers-right-showing-info-banner-logo-sale-advertisement-standing-white-background_1258-89076.jpg?size=626&ext=jpg" />
-            <div className="p-5">
-              <p className="text-xl font-medium">Alexa Shuang</p>
-              <p className="text-sm">CEO Founder</p>
-            </div>
-          </div>
-    );
+const KeyPeopleCard = ({ data }) => {
+  const dispatch = useDispatch();
+  const { id } = useSelector((state) => state.keypeople.DetailsData);
+
+  const ChangeData = () => {
+    dispatch(AddDetailsData(data));
+  };
+  return (
+    <div
+      onClick={ChangeData}
+      className="ProductHead rounded-lg shadow-lg overflow-hidden cursor-pointer h-full"
+    >
+      <div className="w-full h-64 overflow-hidden">
+        <img
+          src={data.img}
+          className="h-64 object-cover object-center w-full ProductImage duration-300"
+        />
+      </div>
+
+      <div
+        className={
+          data.id == id
+            ? "p-5 ProductBody duration-300 bg-green-200"
+            : "p-5 ProductBody duration-300"
+        }
+      >
+        <p className="text-xl font-medium">{data.Name}</p>
+        <p className="text-sm mt-3">{data.Role}</p>
+      </div>
+    </div>
+  );
 };
 
 export default KeyPeopleCard;

@@ -11,7 +11,6 @@ import { motion } from "framer-motion";
 import { CategoriesUp } from "../../Animate/HomeAnimate.js";
 
 const ProductComponent = ({ data }) => {
-  console.log(data);
   return (
     <motion.div
       variants={CategoriesUp}
@@ -28,7 +27,7 @@ const ProductComponent = ({ data }) => {
           <img
             src={data.img}
             alt="card-image"
-            className="h-72 object-cover w-full object-center h-fit hover:scale-110 duration-300"
+            className="h-72 object-cover w-full object-center ProductImage duration-300"
           />
         </CardHeader>
         <CardBody className="p-3">

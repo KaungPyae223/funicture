@@ -4,24 +4,28 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaSquareSnapchat } from "react-icons/fa6";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import { IoLogoLinkedin } from "react-icons/io";
+import { useSelector } from "react-redux";
 
 const KeyDetails = () => {
+  const { DetailsData } = useSelector((state) => state.keypeople);
+
   return (
     <div className="mt-16 rounded-lg shadow-xl grid grid-cols-2 gap-10 overflow-hidden">
       <img
-        src="https://img.freepik.com/free-photo/portrait-beautiful-asian-woman-saleswoman-pointing-fingers-right-showing-info-banner-logo-sale-advertisement-standing-white-background_1258-89076.jpg?size=626&ext=jpg"
-        className="w-fit"
+        src={DetailsData?.img}
+        className="w-full h-full max-h-[500px] object-cover object-center"
       />
-      <div className="py-5 pe-5">
-        <p className="text-3xl font-medium">Alexa Shuang</p>
-        <p className="font-medium mt-1">CEO, Founder of Alexa</p>
-        <RiDoubleQuotesL className="text-4xl mt-8" />
-        <p className="mb-11 mt-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus rem
-          ratione fugiat nemo voluptates, veritatis exercitationem beatae
-          accusantium? Atque magnam dolore laboriosam amet illo obcaecati nobis
-          sed sequi provident incidunt.
-        </p>
+      <div className="py-5 pe-5 flex flex-col justify-between">
+        <div>
+          <p className="text-3xl font-medium">{DetailsData?.Name}</p>
+          <p className="font-medium mt-1">{DetailsData?.Role}</p>
+        </div>
+
+        <div>
+          <RiDoubleQuotesL className="text-4xl mt-8" />
+          <p className="mb-11 mt-3">{DetailsData?.speech}</p>
+        </div>
+
         <div className="flex flex-row gap-5">
           <FaFacebook className="text-3xl text-blue-700 cursor-pointer" />
           <FaSquareXTwitter className="text-3xl cursor-pointer" />

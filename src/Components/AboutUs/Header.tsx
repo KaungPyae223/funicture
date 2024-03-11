@@ -4,17 +4,15 @@ import {
   HeadingImage,
   HeadingTitleAnimation,
 } from "../../Animate/HomeAnimate.js";
+import AboutUSImg from "../../Images/AboutUs.jpg";
 
 const Header = () => {
   return (
     <div className="w-full h-[100vh] relative">
       <motion.img
-        variants={HeadingImage}
-        initial={"initial"}
-        animate={"enter"}
-        src={
-          "https://images.unsplash.com/photo-1544928147-79a2dbc1f389?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        }
+        layoutId="AboutUs"
+        transition={{ duration: 0.6 }}
+        src={AboutUSImg}
         className="w-full h-[100vh] object-cover object-center"
       />
       <div className="absolute top-0 left-0 w-full h-[100vh] flex justify-start items-start">
@@ -24,7 +22,7 @@ const Header = () => {
             initial={"initial"}
             whileInView={"enter"}
             viewport={{ once: true }}
-            custom={0}
+            custom={1.3}
             variants={HeadingTitleAnimation}
           >
             About Alex Furniture Company

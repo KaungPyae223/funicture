@@ -10,6 +10,7 @@ import {
   Badge,
   Button,
 } from "@material-tailwind/react";
+import { motion } from "framer-motion";
 
 const Nav = () => {
   const [openNav, setOpenNav] = React.useState(false);
@@ -70,25 +71,39 @@ const Nav = () => {
     setPrevScrollPos(scrollPos);
   }, [scrollPos]);
 
+
   const navList = (
-    <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="mt-2 mb-4 flex flex-col lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
       <Typography
+        onClick={() => {
+          setActiveNav(0);
+        }}
         as="li"
         variant="small"
         color="blue-gray"
-        className="flex items-center gap-x-2 p-1 font-medium"
+        className="flex items-center p-1 font-medium relative px-3 py-1.5 rounded-lg overflow-hidden"
       >
-        <NavLink to={"/"} className="flex items-center text-xl">
+        <NavLink
+          to={"/"}
+          className="flex items-center z-10 text-xl duration-300"
+        >
           Home
         </NavLink>
       </Typography>
       <Typography
+        onClick={() => {
+          setActiveNav(1);
+        }}
         as="li"
         variant="small"
         color="blue-gray"
-        className="flex items-center gap-x-2 p-1 font-medium"
+        className="flex items-center p-1 font-medium relative px-3 py-1.5 rounded-lg overflow-hidden"
       >
-        <NavLink to={"/products"} className="flex items-center text-xl">
+        <NavLink
+          to={"/products"}
+          className="flex items-center z-10 text-xl duration-300"
+
+        >
           Products
         </NavLink>
       </Typography>
@@ -96,9 +111,13 @@ const Nav = () => {
         as="li"
         variant="small"
         color="blue-gray"
-        className="flex items-center gap-x-2 p-1 font-medium"
+        className="flex items-center p-1 font-medium relative px-3 py-1.5 rounded-lg overflow-hidden"
       >
-        <NavLink to={"/about"} href="#" className="flex items-center text-xl">
+        <NavLink
+          to={"/about"}
+          className="flex items-center z-10 text-xl duration-300"
+          
+        >
           About
         </NavLink>
       </Typography>
@@ -106,9 +125,13 @@ const Nav = () => {
         as="li"
         variant="small"
         color="blue-gray"
-        className="flex items-center gap-x-2 p-1 font-medium"
+        className="flex items-center gap-x-2 p-1 font-medium px-3 py-1.5 rounded-lg overflow-hidden relative"
       >
-        <NavLink to={"/customers"} className="flex items-center text-xl">
+        <NavLink
+          to={"/customers"}
+          className="flex items-center z-10 text-xl duration-300"
+          
+        >
           Customers
         </NavLink>
       </Typography>
@@ -116,9 +139,13 @@ const Nav = () => {
         as="li"
         variant="small"
         color="blue-gray"
-        className="flex items-center gap-x-2 p-1 font-medium"
+        className="flex items-center p-1 font-medium relative px-3 py-1.5 rounded-lg overflow-hidden"
       >
-        <NavLink to={"/contact"} className="flex items-center text-xl">
+        <NavLink
+          to={"/contact"}
+          className="flex items-center z-10 text-xl duration-300"
+          
+        >
           Contact
         </NavLink>
       </Typography>

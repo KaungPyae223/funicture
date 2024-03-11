@@ -1,4 +1,4 @@
-import {  useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { FurnitureBase } from "./Furniture";
 
 const useFetchData = (Target: string) => {
@@ -6,21 +6,22 @@ const useFetchData = (Target: string) => {
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
+
   useEffect(() => {
-    const DataFetching = async () => {
+
+    const FetchData = async () => {
       try {
         const fetch = await FurnitureBase.get(Target);
         setData(fetch.data);
-        setError(null);
       } catch (error) {
-        setError("Error in Fetching");
+        setError(`${error.message} in ${Target} Fetching. `);
       } finally {
         setLoading(false);
       }
     };
 
-    DataFetching();
-  }, [Target]);
+    FetchData();
+  }, []);
 
   return { data, loading, error };
 };

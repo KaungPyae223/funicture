@@ -2,18 +2,16 @@ import React from "react";
 import { motion } from "framer-motion";
 import {
   HeadingTitleAnimation,
-  HeadingImage,
 } from "../../Animate/HomeAnimate.js";
 
-import FunictureHeader from "../../Images/Funicture Header.jpg";
+import HomeImg from "../../Images/Funicture Header.jpg";
 const Header = () => {
   return (
     <div className="w-full h-[100vh] relative">
       <motion.img
-        variants={HeadingImage}
-        initial={"initial"}
-        animate={"enter"}
-        src={FunictureHeader}
+        layoutId="Home"
+        transition={{duration:0.6}}
+        src={HomeImg}
         className="w-full h-[100vh] object-cover object-bottom"
       />
       <div className="absolute top-0 left-0 w-full h-[100vh] flex justify-start items-start">
@@ -23,7 +21,7 @@ const Header = () => {
             initial={"initial"}
             whileInView={"enter"}
             viewport={{ once: true }}
-            custom={0}
+            custom={1.3}
             variants={HeadingTitleAnimation}
           >
             Make Your Home More Attractive and Confort
@@ -33,7 +31,7 @@ const Header = () => {
             initial={"initial"}
             whileInView={"enter"}
             viewport={{ once: true }}
-            custom={1}
+            custom={2.3}
             variants={HeadingTitleAnimation}
           >
             Alexa The Best Furniture Website to Choose
@@ -43,7 +41,7 @@ const Header = () => {
             initial={"initial"}
             whileInView={"enter"}
             viewport={{ once: true }}
-            custom={2}
+            custom={3.3}
             variants={HeadingTitleAnimation}
           >
             <p>

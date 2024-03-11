@@ -82,6 +82,115 @@
       "type": "Bed",
       "price": "900"
     }
+  ],
+  "keypeople":[
+    {
+      "id": 1,
+      "Name": "Emma Thompson",
+      "Role": "Co-Founder and CTO of ModernHome",
+      "img": "https://img.freepik.com/free-photo/portrait-beautiful-asian-woman-saleswoman-pointing-fingers-right-showing-info-banner-logo-sale-advertisement-standing-white-background_1258-89076.jpg?size=626&ext=jpg",
+      "speech": "Hello everyone! It's truly a pleasure to be here and share our passion for creating beautiful and functional furniture at ModernHome. We believe in blending modern design with comfort, creating pieces that not only enhance your living space but also reflect your unique style. Our dedicated team works tirelessly to bring you the latest trends in furniture, ensuring that each piece is not just an object but a statement. Thank you for being a part of the ModernHome family, where innovation meets elegance!"
+    },
+    {
+      "id": 2,
+      "Name": "Daniel Miller",
+      "Role": "Chief Marketing Officer at UrbanLiving",
+      "img": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "speech": "Greetings everyone! At UrbanLiving, we are driven by the belief that your home should tell the story of who you are. As the Chief Marketing Officer, I am excited to share with you our commitment to bringing you not just furniture but experiences. Our collections are curated to reflect the latest in urban living trends, combining style with functionality. Join us on this journey of transforming houses into homes that resonate with your personality and lifestyle."
+    },
+    {
+      "id": 3,
+      "Name": "Sophie Anderson",
+      "Role": "Head of Design at TrendyFurnishings",
+      "img": "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "speech": "Hello design enthusiasts! I'm Sophie Anderson, Head of Design at TrendyFurnishings. Our mission is to infuse your living spaces with a touch of sophistication and trendiness. We believe that every piece of furniture should not only serve its purpose but also elevate the aesthetics of your home. With a keen eye for design, our team strives to bring you pieces that are both stylish and functional. Thank you for letting us be a part of your journey in creating a home that reflects your unique taste."
+    },
+    {
+      "id": 4,
+      "Name": "David Chen",
+      "Role": "Chief Financial Officer of LuxeLiving",
+      "img": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=1889&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "speech": "Good day, everyone! I'm David Chen, the Chief Financial Officer at LuxeLiving. We understand that quality and luxury go hand in hand. Our commitment is to provide you with furniture that not only stands the test of time but also exudes opulence. From meticulously crafted materials to timeless designs, we aim to elevate your living experience. Thank you for choosing LuxeLiving, where affordability meets luxury in the world of furniture."
+    },
+    {
+      "id": 5,
+      "Name": "Olivia Rodriguez",
+      "Role": "Chief Operations Officer at SleekInteriors",
+      "img": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "speech": "Greetings SleekInteriors family! I'm Olivia Rodriguez, your Chief Operations Officer. SleekInteriors is not just a furniture brand; it's a lifestyle. We are committed to making the process of furnishing your home a seamless and enjoyable experience. Our focus on quality craftsmanship and attention to detail ensures that every piece you choose enhances the functionality and aesthetics of your living space. Thank you for letting SleekInteriors be a part of your journey to a sleeker and more stylish home."
+    },
+    {
+      "id": 6,
+      "Name": "Lucas Williams",
+      "Role": "Founder and CEO of StyleCraft",
+      "img": "https://plus.unsplash.com/premium_photo-1671656349322-41de944d259b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "speech": "Hello style enthusiasts! I'm Lucas Williams, the Founder and CEO of StyleCraft. Our journey began with a vision to redefine style in the world of furniture. At StyleCraft, we believe that your home should be a reflection of your personality and style. Our curated collections bring you a blend of modern trends and timeless classics. Thank you for choosing StyleCraft, where innovation meets elegance, and style is not just a choice but a way of life."
+    },
+    {
+      "id": 7,
+      "Name": "Sophia Lee",
+      "Role": "Chief Technology Officer at EleganceDecor",
+      "img": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "speech": "Greetings tech-savvy design enthusiasts! I'm Sophia Lee, the Chief Technology Officer at EleganceDecor. In the digital age, we bring you not just furniture but a seamless and tech-integrated living experience. Our smart and innovative designs aim to enhance your lifestyle through the perfect blend of aesthetics and technology. Thank you for choosing EleganceDecor, where the future of home decor is as bright as your living space."
+    }                        
+  ],
+  "Products": [
+    {
+      "id": 1,
+      "img": "https://plus.unsplash.com/premium_photo-1681980019667-96baeb36fc33?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGZ1cm5pdHVyZXxlbnwwfHwwfHx8MA%3D%3D",
+      "title": "Victor Alex",
+      "type": "Lamp",
+      "price": "350"
+    },
+    {
+      "id": 2,
+      "img": "https://content.cylindo.com/api/v2/5084/products/INGEBORG/frames/30/INGEBORG.JPG?background=FFFFFF&feature=LEG%20FINISH:NATURAL%20OAK&feature=UPHOLSTERY:FIORD%20751",
+      "title": "Elegant Lounge Chair",
+      "type": "Chair",
+      "price": "550"
+    },
+    {
+      "id": 3,
+      "img": "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "title": "Modern Coffee Table",
+      "type": "Table",
+      "price": "250"
+    },
+    {
+      "id": 4,
+      "img": "https://content.cylindo.com/api/v2/5084/products/BRASILIA%20LOUNGE%20CHAIR/frames/30/BRASILIA%20LOUNGE%20CHAIR.JPG?background=FFFFFF&feature=FRAME:NATURAL%20OAK&feature=UPHOLSTERY:SHEEPSKIN%20NATURE",
+      "title": "Cozy Sofa Set",
+      "type": "Sofa",
+      "price": "1200"
+    },
+    {
+      "id": 5,
+      "img": "https://ak1.ostkcdn.com/images/products/is/images/direct/a4baf7c62afebf4fbde4108efa0eefa02d55cfba/4-Tier-Open-Bookshelf%2C-70.8%22-Industrial-Wood-Bookcase%2C-Easy-Assembly.jpg?imwidth=720&impolicy=medium",
+      "title": "Vintage Bookshelf",
+      "type": "Shelf",
+      "price": "450"
+    },
+    {
+      "id": 6,
+      "img": "https://assets.wfcdn.com/im/5140046/resize-h800-w800%5Ecompr-r85/2551/255189687/Desk.jpg",
+      "title": "Minimalist Desk",
+      "type": "Desk",
+      "price": "300"
+    },
+    {
+      "id": 7,
+      "img": "https://plus.unsplash.com/premium_photo-1671269943788-53b24f94d11c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "title": "Rustic Dining Table",
+      "type": "Table",
+      "price": "700"
+    },
+    {
+      "id": 8,
+      "img": "https://cdn11.bigcommerce.com/s-zllqv0a9td/images/stencil/1280x1280/o/beds-cat-image__79872.original.jpg",
+      "title": "Contemporary Bed Frame",
+      "type": "Bed",
+      "price": "900"
+    }
   ]
   
 }

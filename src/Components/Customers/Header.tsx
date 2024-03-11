@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { motion } from "framer-motion";
 import {
   HeadingImage,
@@ -6,12 +6,11 @@ import {
 } from "../../Animate/HomeAnimate.js";
 
 const Header = () => {
-    return (
-        <div className="w-full h-[100vh] relative">
+  return (
+    <div className="w-full h-[100vh] relative">
       <motion.img
-        variants={HeadingImage}
-        initial={"initial"}
-        animate={"enter"}
+        layoutId="Customer"
+        transition={{ duration: 0.6 }}
         src={
           "https://images.pexels.com/photos/15851578/pexels-photo-15851578/free-photo-of-furniture-in-a-living-room.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         }
@@ -24,7 +23,7 @@ const Header = () => {
             initial={"initial"}
             whileInView={"enter"}
             viewport={{ once: true }}
-            custom={0}
+            custom={1.3}
             variants={HeadingTitleAnimation}
           >
             Our Customers Feedbacks
@@ -32,7 +31,7 @@ const Header = () => {
         </div>
       </div>
     </div>
-    );
+  );
 };
 
 export default Header;

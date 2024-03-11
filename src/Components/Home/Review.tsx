@@ -54,8 +54,8 @@ const Review = () => {
         >
           {ReviewData.map((el, i) => {
             return (
-              <SwiperSlide className="h-auto">
-                <ReviewCard data={el} key={i} />
+              <SwiperSlide className="h-auto" key={i}>
+                <ReviewCard data={el}  />
               </SwiperSlide>
             );
           })}

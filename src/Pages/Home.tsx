@@ -8,11 +8,12 @@ import BestSeller from "../Components/Home/BestSeller";
 import Coz from "../Components/Home/Coz";
 import Review from "../Components/Home/Review";
 import Footer from "../Components/Footer";
-import { RootState } from "@reduxjs/toolkit/query";
 import { BestSellingAdding, ReviewAdding } from "../features/homeSlice";
 import Loading from "./Loading";
 import useFetchData from "../Api/useFetchData";
 import ErrorPage from "./ErrorPage";
+
+
 const Home = () => {
   const dispatch = useDispatch();
 
@@ -27,9 +28,12 @@ const Home = () => {
     BestSelling.error ? null : dispatch(BestSellingAdding(BestSelling.data));
   }, [BestSelling.data]);
 
+  const [AnimaitionComplete, setAnimaitionComplete] = useState(false);
+
   const HomePage = () => {
     return (
       <div>
+        
         <Header />
         <WhyChooseUs />
         <OurExperiences />
@@ -42,13 +46,13 @@ const Home = () => {
     );
   };
 
-  return ReviewData.error || BestSelling.error ? (
+  return (ReviewData.error || BestSelling.error) && AnimaitionComplete ? (
     <ErrorPage ErrorMessage={`${ReviewData.error} ${BestSelling.error}`} />
-  ) : ReviewData.loading ? (
-    <Loading />
-  ) : (
+  ) : ReviewData.loading || BestSelling.loading || !AnimaitionComplete ? (
+    <Loading setAnimationComplete={setAnimaitionComplete} />
+  ) : AnimaitionComplete ? (
     <HomePage />
-  );
+  ) : null;
 };
 
 export default Home;

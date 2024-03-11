@@ -10,6 +10,7 @@ import {
 } from "@material-tailwind/react";
 import React from "react";
 import { useCountries } from "use-react-countries";
+import FormInput from "./FormInput";
 
 const ContactForm = () => {
   const { countries } = useCountries();
@@ -20,59 +21,11 @@ const ContactForm = () => {
     <div className="col-span-2">
       <div className=" w-4/5 mx-auto grid gap-5">
         <div className="grid grid-cols-2 gap-5">
-          <div>
-            <Typography variant="h6" color="blue-gray" className="mb-1">
-              First Name
-            </Typography>
-            <Input
-              size="lg"
-              placeholder="First Name"
-              className=" !border-t-blue-gray-200 focus:!border-green-300"
-              labelProps={{
-                className: "before:content-none after:content-none",
-              }}
-            />
-          </div>
-          <div>
-            <Typography variant="h6" color="blue-gray" className="mb-1">
-              Last Name
-            </Typography>
-            <Input
-              size="lg"
-              placeholder="Last Name"
-              className=" !border-t-blue-gray-200 focus:!border-green-300"
-              labelProps={{
-                className: "before:content-none after:content-none",
-              }}
-            />
-          </div>
+          <FormInput title={"First Name"} placeholder={"First Name"} />
+          <FormInput title={"Last Name"} placeholder={"Last Name"} />
         </div>
-        <div>
-          <Typography variant="h6" color="blue-gray" className="mb-1">
-            Companoy Name
-          </Typography>
-          <Input
-            size="lg"
-            placeholder="Company Name"
-            className=" !border-t-blue-gray-200 focus:!border-green-300"
-            labelProps={{
-              className: "before:content-none after:content-none",
-            }}
-          />
-        </div>
-        <div>
-          <Typography variant="h6" color="blue-gray" className="mb-1">
-            Email
-          </Typography>
-          <Input
-            size="lg"
-            placeholder="Someone@email.com"
-            className=" !border-t-blue-gray-200 focus:!border-green-300"
-            labelProps={{
-              className: "before:content-none after:content-none",
-            }}
-          />
-        </div>
+        <FormInput title={"Company Name"} placeholder={"Company Name"} />
+        <FormInput title={"Email"} placeholder={"Someone@email.com"} />
 
         <div>
           <Typography variant="h6" color="blue-gray" className="mb-1">
