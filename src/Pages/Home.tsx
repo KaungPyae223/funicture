@@ -51,7 +51,7 @@ const Home = () => {
   ) : ReviewData.loading || BestSelling.loading || !AnimaitionComplete ? (
     <Loading setAnimationComplete={setAnimaitionComplete} />
   ) : AnimaitionComplete ? (
-    <HomePage />
+    <HomePage key={""}/>
   ) : null;
 };
 

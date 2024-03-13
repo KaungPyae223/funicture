@@ -2,12 +2,14 @@ import { configureStore } from '@reduxjs/toolkit'
 import homeSlice from '../features/homeSlice'
 import keypeopleSlice from '../features/keypeopleSlice'
 import productsSlice from '../features/productsSlice'
+import craftSlice from '../features/craftSlice'
 
 export const store = configureStore({
   reducer: {
     home:homeSlice,
     keypeople:keypeopleSlice,
     products:productsSlice,
+    craft:craftSlice
   },
 })
 

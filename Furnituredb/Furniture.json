@@ -83,7 +83,7 @@
       "price": "900"
     }
   ],
-  "keypeople":[
+  "keypeople": [
     {
       "id": 1,
       "Name": "Emma Thompson",
@@ -132,7 +132,7 @@
       "Role": "Chief Technology Officer at EleganceDecor",
       "img": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "speech": "Greetings tech-savvy design enthusiasts! I'm Sophia Lee, the Chief Technology Officer at EleganceDecor. In the digital age, we bring you not just furniture but a seamless and tech-integrated living experience. Our smart and innovative designs aim to enhance your lifestyle through the perfect blend of aesthetics and technology. Thank you for choosing EleganceDecor, where the future of home decor is as bright as your living space."
-    }                        
+    }
   ],
   "Products": [
     {
@@ -191,6 +191,132 @@
       "type": "Bed",
       "price": "900"
     }
+  ],
+  "Details": [
+    {
+      "id": 1,
+      "img": [
+        "https://plus.unsplash.com/premium_photo-1681980019667-96baeb36fc33?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGZ1cm5pdHVyZXxlbnwwfHwwfHx8MA%3D%3D",
+        "https://cdn11.bigcommerce.com/s-zllqv0a9td/images/stencil/1280x1280/o/beds-cat-image__79872.original.jpg",
+        "https://plus.unsplash.com/premium_photo-1671269943788-53b24f94d11c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://ak1.ostkcdn.com/images/products/is/images/direct/a4baf7c62afebf4fbde4108efa0eefa02d55cfba/4-Tier-Open-Bookshelf%2C-70.8%22-Industrial-Wood-Bookcase%2C-Easy-Assembly.jpg?imwidth=720&impolicy=medium"
+      ],
+      "Name": "Victor Alex",
+      "Color": "White",
+      "Prices": 350,
+      "Size": "24.9H x 32.3W x 32.3D",
+      "Height": "13.21",
+      "Type": "Lamp",
+      "weight": "30",
+      "materials": "Metal base, Fabric lampshade",
+      "Description": "The Victor Alex Lamp is a stylish addition to your space. With a sleek design and white color, it adds a touch of elegance to any room. The lamp stands at 24.9 inches and has a size of 32.3W x 32.3D. This minimalist lamp is perfect for creating a cozy atmosphere. Weighing just 30 pounds, it's easy to move and rearrange. Illuminate your space with the Victor Alex Lamp and enjoy its modern aesthetic."
+    },
+    {
+      "id": 2,
+      "img": [
+        "https://content.cylindo.com/api/v2/5084/products/INGEBORG/frames/30/INGEBORG.JPG?background=FFFFFF&feature=LEG%20FINISH:NATURAL%20OAK&feature=UPHOLSTERY:FIORD%20751",
+        "https://cdn11.bigcommerce.com/s-zllqv0a9td/images/stencil/1280x1280/o/beds-cat-image__79872.original.jpg"
+      ],
+      "Name": "Elegant Lounge Chair",
+      "Color": "Natural Oak",
+      "Prices": 550,
+      "Size": "22.9H x 22.3W x 12.3D",
+      "Height": "29.32",
+      "Type": "Chair",
+      "weight": "19",
+      "materials": "Oak wood frame, Velvet upholstery",
+      "Description": "The Elegant Lounge Chair brings sophistication and comfort to your living space. Crafted with a natural oak finish and upholstered in Fiord 751 fabric, this chair exudes elegance. While the specific dimensions, height, and weight details are not provided, rest assured that this lounge chair is designed for relaxation and style. Create a cozy corner in your home with the Elegant Lounge Chair, where modern design meets luxurious comfort."
+    },
+    {
+      "id": 3,
+      "img": [
+        "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ],
+      "Name": "Modern Coffee Table",
+      "Color": "Natural Wood",
+      "Prices": 250,
+      "Size": "48W x 24D x 18H",
+      "Height": "18",
+      "Type": "Table",
+      "weight": "35",
+      "materials": "Solid wood frame, Plush fabric upholstery",
+
+      "Description": "Enhance your living room with the Modern Coffee Table. With a sleek design and versatile appeal, this table is perfect for both modern and classic interiors. Its natural wood color and minimalist silhouette make it a versatile piece that complements any decor style. Enjoy the convenience and style that the Modern Coffee Table brings to your home."
+    },
+    {
+      "id": 4,
+      "img": [
+        "https://content.cylindo.com/api/v2/5084/products/BRASILIA%20LOUNGE%20CHAIR/frames/30/BRASILIA%20LOUNGE%20CHAIR.JPG?background=FFFFFF&feature=FRAME:NATURAL%20OAK&feature=UPHOLSTERY:SHEEPSKIN%20NATURE"
+      ],
+      "Name": "Cozy Sofa Set",
+      "Color": "Natural Oak Frame, Sheepskin Nature Upholstery",
+      "Prices": 1200,
+      "Size": "96W x 40D x 30H",
+      "Height": "30",
+      "Type": "Sofa",
+      "weight": "120",
+      "materials": "Reclaimed wood, Metal frame",
+      "Description": "Create a warm and inviting atmosphere with the Cozy Sofa Set. The natural oak frame and luxurious sheepskin nature upholstery make this sofa set a statement piece in your living space. Whether you're entertaining guests or enjoying a quiet evening, the Cozy Sofa Set provides comfort and style for your home."
+    },
+    {
+      "id": 5,
+      "img": [
+        "https://ak1.ostkcdn.com/images/products/is/images/direct/a4baf7c62afebf4fbde4108efa0eefa02d55cfba/4-Tier-Open-Bookshelf%2C-70.8%22-Industrial-Wood-Bookcase%2C-Easy-Assembly.jpg?imwidth=720&impolicy=medium"
+      ],
+      "Name": "Vintage Bookshelf",
+      "Color": "Antique Brown",
+      "Prices": 450,
+      "Size": "36W x 12D x 71H",
+      "Height": "71",
+      "Type": "Shelf",
+      "weight": "60",
+      "materials": "Reclaimed wood, Metal frame",
+      "Description": "Organize your literary collection with the Vintage Bookshelf. Featuring an industrial wood design and a 4-tier open structure, this bookshelf adds a touch of vintage charm to your space. The easy assembly makes it a practical and stylish addition to your home. Showcase your favorite books and decor items with the Vintage Bookshelf."
+    },
+    {
+      "id": 6,
+      "img": [
+        "https://assets.wfcdn.com/im/5140046/resize-h800-w800%5Ecompr-r85/2551/255189687/Desk.jpg"
+      ],
+      "Name": "Minimalist Desk",
+      "Color": "White",
+      "Prices": 300,
+      "Size": "48W x 24D x 30H",
+      "Height": "30",
+      "Type": "Desk",
+      "weight": "40",
+      "materials": "MDF (Medium-Density Fiberboard), Metal legs",
+      "Description": "Boost your productivity with the Minimalist Desk. Its clean lines and simple design create a focused and organized workspace. Whether you're working from home or tackling creative projects, this desk offers functionality without compromising on style. Elevate your work area with the Minimalist Desk."
+    },
+    {
+      "id": 7,
+      "img": [
+        "https://plus.unsplash.com/premium_photo-1671269943788-53b24f94d11c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ],
+      "Name": "Rustic Dining Table",
+      "Color": "Weathered Oak",
+      "Prices": 700,
+      "Size": "72W x 36D x 30H",
+      "Height": "30",
+      "Type": "Table",
+      "weight": "80",
+      "materials": "Materials: Pine wood, Iron legs",
+      "Description": "Gather around the Rustic Dining Table for memorable meals with family and friends. The charming rustic design adds character to your dining space, creating a welcoming environment. While specific details are not provided, this table is sure to become the heart of your home. Enjoy the warmth and beauty of the Rustic Dining Table in your dining area."
+    },
+    {
+      "id": 8,
+      "img": [
+        "https://cdn11.bigcommerce.com/s-zllqv0a9td/images/stencil/1280x1280/o/beds-cat-image__79872.original.jpg"
+      ],
+      "Name": "Contemporary Bed Frame",
+      "Color": "Gray",
+      "Prices": 900,
+      "Size": "Queen",
+      "Height": "48",
+      "Type": "Bed",
+      "weight": "150",
+      "materials": "Materials: Pine wood, Iron legs",
+      "Description": "Transform your bedroom with the Contemporary Bed Frame. The stylish gray color and modern design make it a focal point in any bedroom. This queen-sized bed frame is crafted for both comfort and aesthetics. With a height of 48 inches, it adds a touch of luxury to your sleeping space. Enjoy restful nights and contemporary style with the Contemporary Bed Frame."
+    }
   ]
-  
 }

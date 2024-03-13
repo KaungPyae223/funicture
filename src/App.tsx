@@ -7,6 +7,7 @@ import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Products from "./Pages/Products";
 import { AnimatePresence } from "framer-motion";
+import DetailPage from "./Pages/DetailPage";
 
 const App = () => {
   return (
@@ -19,6 +20,8 @@ const App = () => {
           <Route path="/customers" element={<Customers />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/detail/:id" element={<DetailPage />} />
+
         </Routes>
       </AnimatePresence>
     </div>

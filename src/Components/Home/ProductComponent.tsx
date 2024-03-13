@@ -9,10 +9,16 @@ import {
 } from "@material-tailwind/react";
 import { motion } from "framer-motion";
 import { CategoriesUp } from "../../Animate/HomeAnimate.js";
+import { useNavigate } from "react-router-dom";
 
 const ProductComponent = ({ data }) => {
+  const navigate = useNavigate();
+
   return (
     <motion.div
+      onClick={() => {
+        navigate(`/detail/${data.id}`);
+      }}
       variants={CategoriesUp}
       initial={"initial"}
       whileInView={"enter"}

@@ -11,11 +11,16 @@ import {
   Button,
 } from "@material-tailwind/react";
 import { motion } from "framer-motion";
+import { useSelector } from "react-redux";
 
 const Nav = () => {
   const [openNav, setOpenNav] = React.useState(false);
 
   const Nav = useRef();
+
+  const { Products } = useSelector((state) => state.craft);
+  const Craft = useSelector((state) => state.craft);
+
 
   React.useEffect(() => {
     window.addEventListener(
@@ -71,7 +76,6 @@ const Nav = () => {
     setPrevScrollPos(scrollPos);
   }, [scrollPos]);
 
-
   const navList = (
     <ul className="mt-2 mb-4 flex flex-col lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
       <Typography
@@ -102,7 +106,6 @@ const Nav = () => {
         <NavLink
           to={"/products"}
           className="flex items-center z-10 text-xl duration-300"
-
         >
           Products
         </NavLink>
@@ -116,7 +119,6 @@ const Nav = () => {
         <NavLink
           to={"/about"}
           className="flex items-center z-10 text-xl duration-300"
-          
         >
           About
         </NavLink>
@@ -130,7 +132,6 @@ const Nav = () => {
         <NavLink
           to={"/customers"}
           className="flex items-center z-10 text-xl duration-300"
-          
         >
           Customers
         </NavLink>
@@ -144,7 +145,6 @@ const Nav = () => {
         <NavLink
           to={"/contact"}
           className="flex items-center z-10 text-xl duration-300"
-          
         >
           Contact
         </NavLink>
@@ -170,11 +170,17 @@ const Nav = () => {
             Log In
           </Button>
           <div className="hidden lg:block">
-            <Badge content="5">
+            {Products.length ? (
+              <Badge content={Products.length}>
+                <IconButton variant="text" onClick={()=>{console.log(Craft)}}>
+                  <FaCartShopping className="text-3xl" />
+                </IconButton>
+              </Badge>
+            ) : (
               <IconButton variant="text">
                 <FaCartShopping className="text-3xl" />
               </IconButton>
-            </Badge>
+            )}
           </div>
         </div>
         <IconButton
@@ -222,11 +228,17 @@ const Nav = () => {
             <Button variant="outlined" className="mr-3">
               Log In
             </Button>
-            <Badge content="5">
+            {Products.length ? (
+              <Badge content={Products.length}>
+                <IconButton variant="text" >
+                  <FaCartShopping className="text-3xl" />
+                </IconButton>
+              </Badge>
+            ) : (
               <IconButton variant="text">
                 <FaCartShopping className="text-3xl" />
               </IconButton>
-            </Badge>
+            )}
           </div>
         </div>
       </Collapse>

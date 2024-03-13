@@ -14,3 +14,26 @@
 .ProductHead:hover .ProductImage {
   @apply scale-110;
 }
+
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari, and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+
+    /* Hide scrollbar for IE, Edge, and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+} 
+
+.SliderTransparent{
+  background-color: rgb(255 255 255 / 30%);
+}
+.SliderBody:hover .SliderNav{
+  @apply translate-y-0 opacity-100
+}

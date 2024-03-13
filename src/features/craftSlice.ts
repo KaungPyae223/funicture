@@ -1,32 +1,45 @@
-import { createSlice } from '@reduxjs/toolkit'
-import type { PayloadAction } from '@reduxjs/toolkit'
+import { createSlice } from "@reduxjs/toolkit";
 
-export interface CraftState {
-  value: number
-}
+const initialState = {
+  Products: [],
+  TotalPrice: 0,
+  TotalQty: 0,
+};
 
-const initialState: CraftState = {
-  value: 0,
-}
-
-export const counterSlice = createSlice({
-  name: 'counter',
+export const crafSlice = createSlice({
+  name: "craft",
   initialState,
   reducers: {
-    increment: (state) => {
-      
-      state.value += 1
+    AddCraftItem: (state, action) => {
+      state.Products = [...state.Products, action.payload];
+      state.TotalPrice += action.payload.price * action.payload.Qty;
+      state.TotalQty += action.payload.Qty;
     },
-    decrement: (state) => {
-      state.value -= 1
+    RemoveCraftItem: (state, action) => {
+      state.Products = state.Products.filter(
+        (el) => el.id !== action.payload.id
+      );
+      state.TotalPrice -= action.payload.price * action.payload.Qty;
+      state.TotalQty -= action.payload.Qty;
     },
-    incrementByAmount: (state, action: PayloadAction<number>) => {
-      state.value += action.payload
+    IncreaseQty: (state, action) => {
+      state.Products = state.Products.map((el) => 
+        el.id === action.payload.id? {...el,Qty:action.payload.quantity} : el
+      );
+
+      state.TotalPrice += action.payload.price;
+    },
+    ReduceQty: (state, action) => {
+      state.Products = state.Products.map((el) => 
+        el.id === action.payload.id? {...el,Qty:action.payload.quantity} : el
+      );
+
+      state.TotalPrice -= action.payload.price;
     },
   },
-})
+});
 
 // Action creators are generated for each case reducer function
-export const { increment, decrement, incrementByAmount } = counterSlice.actions
+export const { AddCraftItem, RemoveCraftItem, IncreaseQty,ReduceQty } = crafSlice.actions;
 
-export default counterSlice.reducer
+export default crafSlice.reducer;
