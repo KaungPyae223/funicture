@@ -29,7 +29,6 @@ export const productsSlice = createSlice({
       });
     },
     SelectType:(state,action) => {
-      console.log("Hello")
       if(state.SelectedType == action.payload){
         state.SelectedType = "";
       }else{

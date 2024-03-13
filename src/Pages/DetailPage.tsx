@@ -103,10 +103,10 @@ const DetailPage = () => {
               <p className="text-3xl font-bold text-green-800">{quantity}</p>
               <button
                 onClick={increament}
-                class="hover:bg-blue-400 duration-300 relative bg-white align-middle select-none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-[50px]  h-[50px] text-xs shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 active:opacity-[0.85] rounded-full"
+                className="hover:bg-blue-400 duration-300 relative bg-white align-middle select-none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-[50px]  h-[50px] text-xs shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 active:opacity-[0.85] rounded-full"
                 type="button"
               >
-                <span class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                <span className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
                   <FaPlus className="text-xl text-gray-700" />
                 </span>
               </button>

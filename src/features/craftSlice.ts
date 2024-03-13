@@ -23,11 +23,13 @@ export const crafSlice = createSlice({
       state.TotalQty -= action.payload.Qty;
     },
     IncreaseQty: (state, action) => {
+      console.log("Hello");
       state.Products = state.Products.map((el) => 
         el.id === action.payload.id? {...el,Qty:action.payload.quantity} : el
       );
 
       state.TotalPrice += action.payload.price;
+      state.TotalQty ++;
     },
     ReduceQty: (state, action) => {
       state.Products = state.Products.map((el) => 
@@ -35,6 +37,7 @@ export const crafSlice = createSlice({
       );
 
       state.TotalPrice -= action.payload.price;
+      state.TotalQty --;
     },
   },
 });

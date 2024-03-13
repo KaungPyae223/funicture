@@ -22,18 +22,20 @@
       display: none;
     }
 
-
     /* Hide scrollbar for IE, Edge, and Firefox */
     .no-scrollbar {
       -ms-overflow-style: none; /* IE and Edge */
       scrollbar-width: none; /* Firefox */
     }
   }
-} 
+}
 
-.SliderTransparent{
+.SliderTransparent {
   background-color: rgb(255 255 255 / 30%);
 }
-.SliderBody:hover .SliderNav{
-  @apply translate-y-0 opacity-100
+.SliderBody:hover .SliderNav {
+  @apply translate-y-0 opacity-100;
+}
+.CraftContainer:hover .deletebutton {
+  @apply opacity-100 translate-x-0;
 }

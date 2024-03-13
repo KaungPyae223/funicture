@@ -46,3 +46,4 @@ export const TextRight = {
     transition: { duration: 1, ease: [0.33, 1, 0.68, 1], delay: 0.3 },
   },
 };
+
