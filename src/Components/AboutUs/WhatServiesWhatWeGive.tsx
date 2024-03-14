@@ -3,6 +3,8 @@ import { MdOutlineDesignServices } from "react-icons/md";
 import { FaProductHunt } from "react-icons/fa6";
 import { CiDeliveryTruck } from "react-icons/ci";
 import ServicesCard from "./ServicesCard";
+import { motion } from "framer-motion";
+import { Fade } from "../../Animate/AboutUsAnimate.js";
 
 type Services = {
   icon: React.ReactNode;
@@ -27,21 +29,29 @@ const WhatServiesWhatWeGive = () => {
     {
       icon: <CiDeliveryTruck className="text-7xl text-blue-gray-700" />,
       heading: "Delivery, Installation, and Post-Project Support",
-      contant: "We offers delivering and installation, Warranty Management, Annual Furniture ‘Health Check’ and so on",
+      contant:
+        "We offers delivering and installation, Warranty Management, Annual Furniture ‘Health Check’ and so on",
     },
   ];
 
   return (
-    <div className="m-11 mt-[7rem] p-11 py-16 bg-green-200 rounded-lg flex flex-col items-center justify-center gap-16">
-      <p className="text-5xl font-bold">Services That We Provides</p>
-      <div className="grid grid-cols-3 gap-12">
-        {
-            ServicesData.map((el) => {
-                return <ServicesCard data={el}/>
-            })
-        }
+    <motion.div
+      variants={Fade}
+      initial={"initial"}
+      whileInView={"enter"}
+      viewport={{ once: true }}
+      custom={1}
+      className="md:m-11 m-5  mt-[7rem] md:px-11 px-5 py-16 bg-green-200 rounded-lg flex flex-col items-center justify-center gap-16"
+    >
+      <p className="md:text-5xl text-4xl font-bold">
+        Services That We Provides
+      </p>
+      <div className="grid md:grid-cols-3 grid-cols-1 gap-12">
+        {ServicesData.map((el, i) => {
+          return <ServicesCard data={el} key={i} index={i} />;
+        })}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

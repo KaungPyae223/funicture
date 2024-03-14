@@ -7,6 +7,7 @@ import { initialFetch } from "../features/productsSlice";
 import ProductDisplay from "../Components/Products/ProductDisplay";
 import ErrorPage from "./ErrorPage";
 import Loading from "./Loading";
+import Footer from "../Components/Footer";
 
 const Products = () => {
   const dispatch = useDispatch();
@@ -24,6 +25,7 @@ const Products = () => {
         <ProductHeaders />
         <ProductSearch />
         <ProductDisplay />
+        <Footer/>
       </div>
     );
   };

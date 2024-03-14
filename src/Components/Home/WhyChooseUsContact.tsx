@@ -5,7 +5,7 @@ import { TextRight } from "../../Animate/HomeAnimate.js";
 const WhyChooseUsContact = ({ value }) => {
   return (
     <motion.div
-      className="flex flex-row gap-5 items-center justify-start border-b border-b-gray-500 pb-5"
+      className="flex lg:flex-row flex-col gap-5 items-center lg:justify-start justify-center lg:border-b lg:border-b-gray-500 pb-5 px-5 lg:px-0"
       variants={TextRight}
       initial={"initial"}
       whileInView={"enter"}
@@ -15,8 +15,10 @@ const WhyChooseUsContact = ({ value }) => {
         {value.icon}
       </div>
       <div className="font-heading">
-        <p className="text-3xl font-medium">{value.heading}</p>
-        <p className="pt-3">{value.contant}</p>
+        <p className="lg:text-3xl text-2xl text-center lg:text-start font-medium">
+          {value.heading}
+        </p>
+        <p className="pt-3 lg:text-start text-center">{value.contant}</p>
       </div>
     </motion.div>
   );

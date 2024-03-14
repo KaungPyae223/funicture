@@ -8,8 +8,19 @@ import Contact from "./Pages/Contact";
 import Products from "./Pages/Products";
 import { AnimatePresence } from "framer-motion";
 import DetailPage from "./Pages/DetailPage";
+import Cookies from 'js-cookie';
+import { useDispatch } from "react-redux";
+import { AddFromCookie } from "./features/craftSlice";
+import Loading from "./Pages/Loading";
 
 const App = () => {
+  const dispatch = useDispatch();
+
+  if(Cookies.get("Craft")){
+    const CraftItems = JSON.parse(Cookies.get("Craft"));
+    dispatch(AddFromCookie(CraftItems));
+  }
+
   return (
     <div className="max-w-[100vw] overflow-hidden">
       <Nav />

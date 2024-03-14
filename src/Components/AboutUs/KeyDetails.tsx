@@ -10,12 +10,12 @@ const KeyDetails = () => {
   const { DetailsData } = useSelector((state) => state.keypeople);
 
   return (
-    <div className="mt-16 rounded-lg shadow-xl grid grid-cols-2 gap-10 overflow-hidden">
+    <div className="mt-16 rounded-lg shadow-xl grid md:grid-cols-2 gap-10 overflow-hidden">
       <img
         src={DetailsData?.img}
         className="w-full h-full max-h-[500px] object-cover object-center"
       />
-      <div className="py-5 pe-5 flex flex-col justify-between">
+      <div className="py-5 md:pe-5 px-5  flex flex-col justify-between">
         <div>
           <p className="text-3xl font-medium">{DetailsData?.Name}</p>
           <p className="font-medium mt-1">{DetailsData?.Role}</p>

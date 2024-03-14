@@ -39,17 +39,19 @@ const WhyChooseUs = () => {
   ));
 
   return (
-    <div className="mt-12 px-11 py-11 grid grid-cols-5 gap-5 ">
+    <div className="mt-12 md:px-11 px-5 md:py-11 py-5 grid lg:grid-cols-5 grid-cols-1 md:gap-5 gap-10 ">
       <motion.p
-        className="font-heading text-5xl col-span-2 font-medium leading-[4.5rem]"
+        className="font-heading md:text-5xl text-3xl lg:col-span-2 font-medium lg:leading-[4.5rem]"
         variants={TextFadeIn}
         initial={"initial"}
         whileInView={"enter"}
         viewport={{ once: true }}
       >
-        Why <br></br> Should Choose <br></br> Our Company's <br></br> Products?
+        Why <span className="lg:block"></span> Should Choose{" "}
+        <span className="lg:block"></span> Our Company's{" "}
+        <span className="lg:block"></span> Products?
       </motion.p>
-      <div className="col-span-3 flex flex-col gap-8">
+      <div className="lg:col-span-3 flex flex-col gap-8">
         {whyChooseUsComponents}
       </div>
     </div>

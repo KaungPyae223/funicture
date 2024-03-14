@@ -25,10 +25,10 @@ const Footer = () => {
   const [email, setEmail] = React.useState("");
   const onChange = ({ target }) => setEmail(target.value);
   return (
-    <div className="mx-11 font-heading mt-10 pt-10 border-t border-t-blue-gray-200">
+    <div className="lg:mx-11 mx-5 font-heading mt-10 pt-10 border-t border-t-blue-gray-200">
       <footer className="relative w-full">
         <div className="mx-auto w-full max-w-7xl px-8">
-          <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
+          <div className="grid grid-cols-1 justify-between gap-10 lg:gap-4 md:grid-cols-2">
             <div>
               <p className="text-3xl font-medium mb-3">Alexa</p>
               <p className="text-sm max-w-[350px] mb-3">

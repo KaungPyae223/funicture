@@ -159,7 +159,7 @@ const Nav = () => {
     <>
       <Navbar
         ref={Nav}
-        className="mx-auto rounded-none shadow-none py-2 px-0 lg:px-11 top-0 left-0 z-50 w-full transform duration-500"
+        className="mx-auto rounded-none shadow-none py-2 px-5 md:px-11 top-0 left-0 z-50 w-full transform duration-500"
       >
         <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
           <Typography
@@ -248,7 +248,7 @@ const Nav = () => {
           </div>
         </Collapse>
       </Navbar>
-       <CraftDrawer closeDrawer={closeDrawer} open={open} Craft={Craft} />
+       <CraftDrawer closeDrawer={closeDrawer} open={open} Craft={Craft}  />
     </>
   );
 };

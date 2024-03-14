@@ -11,8 +11,8 @@ const ProductSearch = () => {
  
   const ref = useRef();
   return (
-    <div className="px-11">
-      <div className="w-1/2 my-6 border border-green-500 mx-auto py-3 px-7 rounded-full flex flex-row items-center justify-center">
+    <div className="lg:px-11 px-5">
+      <div className="lg:w-1/2 my-6 border border-green-500 mx-auto py-3 lg:px-7 px-5 rounded-full flex flex-row items-center justify-center">
         <input
           ref={ref}
           type="text"
@@ -23,9 +23,9 @@ const ProductSearch = () => {
           <IoSearch className="text-2xl" onClick={() => {dispatch(SearchItem(ref.current.value))}} />
         </button>
       </div>
-      <div className="flex flex-wrap justify-center gap-3 pb-5 w-2/3 mx-auto">
+      <div className="flex flex-wrap justify-center gap-3 pb-5 lg:w-2/3 mx-auto">
         {Types.map((el, i) => {
-          return <TypesChip key={i} data={el}></TypesChip>;
+          return <TypesChip key={i} data={el} index={i}></TypesChip>;
         })}
       </div>
     </div>

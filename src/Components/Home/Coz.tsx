@@ -8,7 +8,7 @@ import {
 } from "../../Animate/HomeAnimate.js";
 const Coz = () => {
   return (
-    <div className="px-11 py-10 my-10 grid grid-cols-2 gap-5">
+    <div className="lg:px-11 px-5 lg:py-10 my-10 grid lg:grid-cols-2 grid-cols-1 gap-5">
       <motion.img
         src="https://plus.unsplash.com/premium_photo-1670359037486-41aa5e6594ad?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         initial={"initial"}
@@ -39,7 +39,7 @@ const Coz = () => {
           <div className="absolute right-0 w-[100vw]">
             <div className=" flex flex-row justify-end">
               <motion.div
-                className="p-2 bg-white w-64"
+                className="p-2 bg-white w-64 hidden lg:block"
                 initial={"initial"}
                 whileInView={"enter"}
                 variants={ImageRight}
@@ -52,7 +52,7 @@ const Coz = () => {
                 />
               </motion.div>
               <motion.div
-                className="p-2 bg-white w-64"
+                className="p-2 bg-white w-64 hidden lg:block"
                 initial={"initial"}
                 whileInView={"enter"}
                 variants={ImageRight}
@@ -65,7 +65,7 @@ const Coz = () => {
                 />
               </motion.div>
               <motion.div
-                className="p-2 bg-white w-64"
+                className="p-2 bg-white w-64 hidden lg:block"
                 initial={"initial"}
                 whileInView={"enter"}
                 variants={ImageRight}

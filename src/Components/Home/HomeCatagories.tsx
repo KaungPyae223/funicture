@@ -13,7 +13,7 @@ import {
 
 const HomeCatagories = () => {
   return (
-    <div className="mt-10 py-10 px-11 grid grid-cols-3 gap-5">
+    <div className="mt-10 py-10 lg:px-11 px-5 grid lg:grid-cols-3 grid-cols-2 gap-5">
       <motion.div
         className="border border-green-200 col-span-2 p-8"
         variants={CategoriesLeft}

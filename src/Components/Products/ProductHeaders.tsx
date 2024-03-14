@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { TextUp } from "../../Animate/ProductAnimate.js";
 
 const ProductHeaders = () => {
   return (
@@ -11,9 +12,9 @@ const ProductHeaders = () => {
       >
         Alexa
       </motion.p>
-      <p className="mt-5 text-xl font-medium">
+      <motion.p variants={TextUp} initial={"initial"} whileInView={"enter"} viewport={{once:true}} className="mt-5 text-xl font-medium text-center">
         We Are Ready to Give Better Experiences for You
-      </p>
+      </motion.p>
     </div>
   );
 };

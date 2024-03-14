@@ -14,9 +14,9 @@ const OurExperiences = () => {
   const CounterStart = useInView(Counter, { once: true });
 
   return (
-    <div className="grid grid-cols-5 gap-5 px-11 py-10 mt-5">
+    <div className="lg:grid lg:grid-cols-5 flex flex-col-reverse gap-5 md:px-11 px-5 py-10 mt-5">
       <motion.div
-        className="col-span-2"
+        className="lg:col-span-2"
         initial={"initial"}
         whileInView={"enter"}
         variants={OurExperiencesLeft}
@@ -54,7 +54,7 @@ const OurExperiences = () => {
           <div>
             <p className="text-4xl font-bold pb-1 text-green-800">
               {CounterStart ? (
-                <CountUp end={12836} duration={3} delay={0.5} />
+                <CountUp end={2836} duration={3} delay={0.5} />
               ) : null}
             </p>
             <p>
@@ -70,7 +70,7 @@ const OurExperiences = () => {
           <GrLinkNext />
         </button>
       </motion.div>
-      <div className="col-span-3 grid grid-cols-6">
+      <div className="col-span-3 grid lg:grid-cols-6">
         <div className="col-span-4 col-start-2 relative duration-300">
           <motion.img
             src={OurExperience}

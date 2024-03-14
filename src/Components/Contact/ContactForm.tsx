@@ -18,9 +18,9 @@ const ContactForm = () => {
   const { name, flags, countryCallingCode } = countries[country];
 
   return (
-    <div className="col-span-2">
-      <div className=" w-4/5 mx-auto grid gap-5">
-        <div className="grid grid-cols-2 gap-5">
+    <div className="md:col-span-2">
+      <div className=" md:w-4/5 w-full mx-auto grid gap-5">
+        <div className="grid lg:grid-cols-2 gap-5">
           <FormInput title={"First Name"} placeholder={"First Name"} />
           <FormInput title={"Last Name"} placeholder={"Last Name"} />
         </div>
@@ -91,13 +91,13 @@ const ContactForm = () => {
         <Checkbox
           color="green"
           label={
-            <Typography color="blue-gray" className="flex font-medium">
+            <Typography color="blue-gray" className="lg:flex font-medium">
               I undersatnad and Agree to the
               <Typography
                 as="a"
                 href="#"
                 color="blue"
-                className="font-medium transition-colors hover:text-blue-700"
+                className="font-medium transition-colors hover:text-blue-700 "
               >
                 &nbsp;Privacy Policies
               </Typography>

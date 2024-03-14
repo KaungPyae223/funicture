@@ -6,8 +6,10 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import CraftItems from "./CraftItems";
+import { useSelector } from "react-redux";
 
-const CraftDrawer = ({ open, closeDrawer, Craft }) => {
+const CraftDrawer = ({ open, closeDrawer,Craft }) => {
+
   return (
     <React.Fragment>
       <Drawer

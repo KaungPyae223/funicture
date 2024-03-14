@@ -8,13 +8,13 @@ import { ImageUp, LoadingAnimate } from "../Animate/LoadingAnimate.js";
 const Loading = ({ setAnimationComplete }) => {
   return (
     <motion.div
-      className="w-[100vw] h-[100vh] relative"
+      className="w-[100vw] h-[100vh] md:relative flex flex-col gap-5 justify-center items-center lg:block"
       variants={LoadingAnimate}
       initial={"initial"}
       animate={"enter"}
       custom={0}
     >
-      <div className="w-fit h-64 scale-125 absolute left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%] z-10">
+      <div className="w-fit h-64 scale-125 absolute left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%] z-10 hidden lg:inline ">
         <motion.img
           variants={ImageUp}
           initial={"initial"}
@@ -26,7 +26,7 @@ const Loading = ({ setAnimationComplete }) => {
           className="h-full object-cover object-center"
         />
       </div>
-      <div className="w-fit h-56 absolute left-[20%] top-[25%] -translate-x-[50%] -translate-y-[50%]">
+      <div className="w-fit h-56 absolute left-[20%] top-[25%] -translate-x-[50%] -translate-y-[50%] hidden lg:inline">
         <motion.img
           layoutId="AboutUs"
           variants={ImageUp}
@@ -38,7 +38,7 @@ const Loading = ({ setAnimationComplete }) => {
           className="h-full object-cover object-center"
         />
       </div>
-      <div className="h-56 absolute right-[20%] top-[25%] translate-x-[50%] -translate-y-[50%]">
+      <div className="h-56 absolute right-[20%] top-[25%] translate-x-[50%] -translate-y-[50%] hidden lg:inline">
         <motion.img
           variants={ImageUp}
           layoutId="Customer"
@@ -52,7 +52,7 @@ const Loading = ({ setAnimationComplete }) => {
           className="h-full object-cover object-center"
         />
       </div>
-      <div className="absolute left-[50%] -translate-x-[50%] top-10">
+      <div className="lg:absolute lg:left-[50%] lg:-translate-x-[50%] top-10">
         <motion.p
           layoutId="Alexa"
           className="text-center font-medium text-7xl "
@@ -100,7 +100,7 @@ const Loading = ({ setAnimationComplete }) => {
         </motion.p>
       </div>
 
-      <div className="text-3xl font-medium absolute top-[75%] left-[80%] -translate-x-[50%] -translate-y-[50%]">
+      <div className="text-3xl font-medium lg:absolute top-[75%] left-[80%] lg:-translate-x-[50%] lg:-translate-y-[50%]">
         <motion.p
           variants={LoadingAnimate}
           initial={"initial"}
