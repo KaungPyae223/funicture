@@ -8,7 +8,7 @@ import { ImageUp, LoadingAnimate } from "../Animate/LoadingAnimate.js";
 const Loading = ({ setAnimationComplete }) => {
   return (
     <motion.div
-      className="w-[100vw] h-[100vh] md:relative flex flex-col gap-5 justify-center items-center lg:block"
+      className="w-[100vw] h-[100vh] z-50 bg-white md:relative flex flex-col gap-5 justify-center items-center lg:block"
       variants={LoadingAnimate}
       initial={"initial"}
       animate={"enter"}

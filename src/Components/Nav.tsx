@@ -10,7 +10,7 @@ import {
   Badge,
   Button,
 } from "@material-tailwind/react";
-import { motion } from "framer-motion";
+
 import { useSelector } from "react-redux";
 import CraftDrawer from "./CraftDrawer";
 
@@ -33,35 +33,20 @@ const Nav = () => {
     );
   }, []);
 
-  const [scrollPos, setScrollPos] = useState(0);
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [ydown, setydown] = useState(false);
+  const [currentScroll, setCurrentScroll] = useState(0);
+  const [prevScroll, setPrevScroll] = useState(0);
 
   const handleScroll = () => {
-    const currentScrollPos = window.scrollY;
-    setScrollPos(currentScrollPos);
-    if (
-      Nav.current.offsetHeight < window.scrollY &&
-      Nav.current.offsetHeight > prevScrollPos
-    ) {
-      Nav.current.classList.add("fixed", "-translate-y-[100%]");
-    } else if (window.scrollY == 0) {
-      Nav.current.classList.remove("fixed", "-translate-y-[100%]");
-    } else if (
-      window.scrollY > prevScrollPos &&
-      Nav.current.offsetHeight < window.scrollY &&
-      ydown
-    ) {
+    console.log(prevScroll);
+    console.log(currentScroll);
+
+    if (window.scrollY > prevScroll) {
       Nav.current.classList.add("-translate-y-[100%]");
-      setydown(false);
-    } else if (
-      window.scrollY < prevScrollPos &&
-      Nav.current.offsetHeight < window.scrollY &&
-      !ydown
-    ) {
+    } else if (window.scrollY < prevScroll) {
       Nav.current.classList.remove("-translate-y-[100%]");
-      setydown(true);
     }
+    setPrevScroll(currentScroll);
+    setCurrentScroll(window.scrollY);
   };
 
   useEffect(() => {
@@ -74,11 +59,7 @@ const Nav = () => {
     return () => {
       window.removeEventListener("scroll", handleScrollEvent);
     };
-  }, [scrollPos]);
-
-  useEffect(() => {
-    setPrevScrollPos(scrollPos);
-  }, [scrollPos]);
+  }, [currentScroll]);
 
   const navList = (
     <ul className="mt-2 mb-4 flex flex-col lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
@@ -159,7 +140,7 @@ const Nav = () => {
     <>
       <Navbar
         ref={Nav}
-        className="mx-auto rounded-none shadow-none py-2 px-5 md:px-11 top-0 left-0 z-50 w-full transform duration-500"
+        className="mx-auto fixed max-w-none rounded-none shadow-none py-2 px-5 md:px-11 top-0 left-0 z-50 w-full transform duration-500"
       >
         <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
           <Typography
@@ -248,7 +229,7 @@ const Nav = () => {
           </div>
         </Collapse>
       </Navbar>
-       <CraftDrawer closeDrawer={closeDrawer} open={open} Craft={Craft}  />
+      <CraftDrawer closeDrawer={closeDrawer} open={open} Craft={Craft} />
     </>
   );
 };
